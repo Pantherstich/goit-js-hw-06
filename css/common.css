@@ -22,9 +22,3 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
-.js-img {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  list-style: none;
-}

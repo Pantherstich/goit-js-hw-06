@@ -13,9 +13,15 @@ const images = [
   },
 ];
 const container = document.querySelector(".gallery");
+console.log(container);
 const image = images.map(({ url, alt }) => 
     `<li>
-     <img src="${url}" alt="${alt}"  class="img" width = 480px>
+     <img src="${url}" alt="${alt}" width=480px>
     </li>`).join("");
 container.insertAdjacentHTML("beforeend", image);
-container.classList.add("js-img");
+
+container.style.cssText = 
+  `display: flex;
+  flex-direction: column;
+  gap: 24px;
+  list-style: none`
