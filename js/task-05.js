@@ -7,7 +7,7 @@ function inputChange(event) {
         output.textContent = "Anonymous";
     } else 
     {
-        output.textContent = event.currentTarget.value;
+        output.textContent = event.currentTarget.value.trim();
     }
 
 }

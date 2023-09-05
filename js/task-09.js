@@ -11,6 +11,7 @@ function getRandomHexColor() {
 }
 
 function changer() {
-    const colorCurrent = (body.style.backgroundColor = getRandomHexColor());
+  const colorCurrent = getRandomHexColor();
+  body.style.backgroundColor = colorCurrent;
   colorSpan.textContent = colorCurrent;
 }
