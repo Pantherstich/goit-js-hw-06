@@ -23,3 +23,4 @@ const items=ingredients.map(ingredient => {
   item.textContent = ingredient;
   item.classList.add("item");
 })
+list.append(...items)
