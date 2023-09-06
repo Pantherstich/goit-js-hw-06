@@ -17,12 +17,6 @@ const list = document.querySelector("#ingredients");
 // })
 // list.append(...items)
 
-
-  const items = [];
-  ingredients.map(ingredient => {
-  const item = document.createElement("li");
-  item.textContent = ingredient;
-  item.classList.add("item");
-
-})
-console.log(items)
+const items = ingredients.map(ingredient => `<li class="item">${ingredient}</li>`)
+  .join('');
+list.insertAdjacentHTML('beforeend', items);
